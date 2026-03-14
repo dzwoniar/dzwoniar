@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Darmowy Audyt Marketingu — Jakub Dzwoniarski</title>
+<meta name="description" content="Darmowy audyt CRO i marketingu dla firm B2B i SaaS w Polsce. Konkretne zmiany z priorytetami. Bez spotkań, bez presji.">
+<meta property="og:title" content="Darmowy Audyt Marketingu — Jakub Dzwoniarski">
+<meta property="og:description" content="Pokażę Ci gdzie tracisz klientów i co z tym zrobić. Konkretna lista zmian — video + raport. Bez spotkań.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
+:root {
+  --dark: #0B1D2E;
+  --dark2: #0D2137;
+  --green: #0A7B4F;
+  --green-light: #7CEDA6;
+  --green-bg: #E8F8F0;
+  --green-bg2: #F0FAF5;
+  --green-bg3: #F5FAF7;
+  --red: #DC3D2A;
+  --red-bg: #FEF5F3;
+  --text: #1a1a2e;
+  --text2: #555;
+  --text3: #666;
+  --text4: #888;
+  --text5: #999;
+  --border: #E8E8E4;
+  --border2: #E0E0DC;
+  --border3: #D4D4CF;
+  --bg: #FAFAF8;
+  --bg2: #F5F3F0;
+  --white: #fff;
+}
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+a { color: var(--green); }
+.container { max-width: 920px; margin: 0 auto; padding: 0 24px; }
+.section { padding: 72px 24px; }
+
+/* ═══ HERO ═══ */
+.hero {
+  background: linear-gradient(175deg, #0B1D2E 0%, #122A42 55%, #163B5C 100%);
+  padding: 72px 24px 80px;
+  text-align: center;
+}
+.hero-inner { max-width: 740px; margin: 0 auto; }
+.hero-eyebrow {
+  font-size: 14px; font-weight: 600; letter-spacing: 1.5px;
+  text-transform: uppercase; color: var(--green-light); margin-bottom: 20px;
+}
+.hero h1 {
+  font-family: 'Fraunces', serif; font-size: clamp(32px, 5vw, 52px);
+  font-weight: 700; color: #fff; line-height: 1.15; margin-bottom: 24px;
+}
+.hero h1 span { font-weight: 400; color: rgba(255,255,255,.6); }
+.hero-p {
+  font-size: clamp(16px, 2vw, 18px); color: rgba(255,255,255,.7);
+  line-height: 1.7; max-width: 600px; margin: 0 auto 36px;
+}
+.hero-micro { font-size: 13px; color: rgba(255,255,255,.4); margin-top: 16px; }
+
+/* ═══ BUTTONS ═══ */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--green); color: #fff; border: none;
+  padding: 16px 36px; border-radius: 8px; font-size: 17px; font-weight: 600;
+  cursor: pointer; transition: all .2s; font-family: 'DM Sans', sans-serif;
+  box-shadow: 0 4px 16px rgba(10,123,79,.3); gap: 8px; text-decoration: none;
+}
+.btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(10,123,79,.25); }
+.btn svg { flex-shrink: 0; }
+
+/* ═══ ANTI-AGENCY ═══ */
+.anti { background: var(--white); }
+.anti-grid { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
+.anti-card {
+  flex: 1 1 380px; max-width: 440px; background: var(--bg2);
+  border-radius: 14px; padding: 32px 28px;
+}
+.anti-card.dark { background: var(--dark2); color: #fff; }
+.anti-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 20px; }
+.anti-card.dark h3 { color: var(--green-light); }
+.anti-list { display: flex; flex-direction: column; gap: 12px; }
+.anti-item { display: flex; align-items: flex-start; gap: 10px; font-size: 15px; line-height: 1.5; }
+.anti-x { font-weight: 700; font-size: 16px; flex-shrink: 0; color: var(--red); }
+.anti-card.dark .anti-x { color: var(--green-light); }
+
+/* ═══ SECTION HEADINGS ═══ */
+.sh2 {
+  font-family: 'Fraunces', serif; font-size: clamp(22px, 3vw, 30px);
+  font-weight: 600; text-align: center; margin-bottom: 12px;
+}
+.ssub { font-size: 16px; color: var(--text3); text-align: center; margin-bottom: 44px; }
+
+/* ═══ WHAT YOU GET ═══ */
+.what { background: var(--bg); }
+.what-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 20px;
+}
+.what-card {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: 12px; padding: 24px 20px;
+}
+.what-icon { font-size: 28px; display: block; margin-bottom: 12px; }
+.what-card h3 { font-size: 16px; font-weight: 700; margin-bottom: 8px; }
+.what-card p { font-size: 14px; color: var(--text2); line-height: 1.6; }
+
+/* ═══ WHY ME ═══ */
+.why { background: var(--white); }
+.why-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px; margin-bottom: 36px;
+}
+.why-card { background: var(--green-bg3); border-radius: 12px; padding: 24px 20px; text-align: center; }
+.why-num { font-family: 'Fraunces', serif; font-size: 38px; font-weight: 700; color: var(--green); display: block; }
+.why-label {
+  font-size: 13px; font-weight: 600; text-transform: uppercase;
+  letter-spacing: .5px; display: block; margin-bottom: 8px; color: #333;
+}
+.why-desc { font-size: 14px; color: var(--text2); line-height: 1.5; }
+.method-box { background: var(--dark2); border-radius: 14px; padding: 28px 24px; color: #fff; }
+.method-box h3 { font-size: 18px; font-weight: 700; margin-bottom: 12px; color: var(--green-light); }
+.method-box p { font-size: 15px; line-height: 1.7; color: rgba(255,255,255,.8); }
+
+/* ═══ HOW IT WORKS ═══ */
+.how { background: var(--bg); }
+.how-steps { max-width: 640px; margin: 0 auto 32px; display: flex; flex-direction: column; gap: 24px; }
+.how-step { display: flex; gap: 20px; align-items: flex-start; }
+.how-num {
+  width: 40px; height: 40px; border-radius: 50%; background: var(--dark2);
+  color: #fff; font-size: 16px; font-weight: 700; display: flex;
+  align-items: center; justify-content: center; flex-shrink: 0;
+}
+.how-meta { font-size: 12px; font-weight: 600; color: var(--green); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.how-step h3 { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+.how-step p { font-size: 14px; color: var(--text2); line-height: 1.6; }
+.async-box {
+  max-width: 640px; margin: 0 auto; background: var(--green-bg);
+  border-radius: 12px; padding: 20px 24px; font-size: 15px; line-height: 1.6;
+  border-left: 4px solid var(--green);
+}
+
+/* ═══ SOCIAL PROOF ═══ */
+.proof { background: var(--white); }
+.proof-grid { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; }
+.proof-card {
+  flex: 1 1 360px; max-width: 430px; background: var(--bg);
+  border: 1px solid var(--border); border-radius: 12px; padding: 28px 24px;
+}
+.proof-q {
+  font-size: 15px; color: #333; line-height: 1.7; font-style: italic;
+  margin-bottom: 20px; border-left: 3px solid var(--green); padding-left: 16px;
+}
+.proof-author { display: flex; align-items: center; gap: 12px; }
+.proof-av {
+  width: 40px; height: 40px; border-radius: 50%; background: var(--dark2);
+  color: #fff; display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 600;
+}
+.proof-name { font-size: 14px; font-weight: 600; }
+.proof-role { font-size: 13px; color: var(--text4); }
+
+/* ═══ FOR WHO ═══ */
+.for-who { background: var(--bg); }
+.for-grid { display: flex; gap: 24px; flex-wrap: wrap; justify-content: center; max-width: 840px; margin: 0 auto; }
+.for-card { flex: 1 1 360px; max-width: 400px; border-radius: 12px; padding: 28px 24px; }
+.for-card.yes { background: var(--green-bg2); }
+.for-card.no { background: var(--red-bg); }
+.for-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 16px; }
+.for-item { display: flex; align-items: flex-start; gap: 10px; font-size: 15px; line-height: 1.7; margin-bottom: 8px; }
+.for-check { flex-shrink: 0; margin-top: 3px; }
+.for-x { color: var(--red); font-weight: 700; flex-shrink: 0; }
+
+/* ═══ FORM ═══ */
+.form-section { background: var(--white); padding: 72px 24px; }
+.form-box {
+  max-width: 520px; margin: 0 auto; background: var(--bg);
+  border: 1px solid var(--border2); border-radius: 16px; padding: 40px 32px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.05);
+}
+.form-box h2 { font-family: 'Fraunces', serif; font-size: 26px; font-weight: 600; text-align: center; margin-bottom: 8px; }
+.form-sub { font-size: 15px; color: var(--text3); text-align: center; margin-bottom: 28px; }
+.form-inner { display: flex; flex-direction: column; gap: 18px; }
+.form-group { display: flex; flex-direction: column; gap: 6px; }
+.form-group label { font-size: 14px; font-weight: 600; color: #333; }
+.form-group input {
+  padding: 14px 16px; border: 1.5px solid var(--border3); border-radius: 8px;
+  font-size: 16px; font-family: 'DM Sans', sans-serif; color: var(--text);
+  outline: none; transition: border .2s; background: var(--white);
+}
+.form-group input:focus { border-color: var(--green); }
+.form-group input.error { border-color: var(--red); }
+.error-text { font-size: 13px; color: var(--red); }
+.check-row { display: flex; gap: 10px; align-items: flex-start; }
+.check-row input { margin-top: 3px; width: 18px; height: 18px; accent-color: var(--green); }
+.check-row label { font-size: 13px; color: var(--text3); line-height: 1.5; }
+.submit-btn {
+  display: flex; align-items: center; justify-content: center; width: 100%;
+  background: var(--green); color: #fff; border: none;
+  padding: 16px 32px; border-radius: 8px; font-size: 17px; font-weight: 600;
+  cursor: pointer; transition: all .2s; font-family: 'DM Sans', sans-serif;
+  box-shadow: 0 4px 12px rgba(10,123,79,.15); gap: 8px;
+}
+.submit-btn:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(10,123,79,.25); }
+.form-micro {
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; color: var(--text5); margin-top: 4px; gap: 4px;
+}
+
+/* ═══ FINAL CTA ═══ */
+.final {
+  padding: 72px 24px; text-align: center;
+  background: linear-gradient(175deg, #0B1D2E, #163B5C);
+}
+.final h2 {
+  font-family: 'Fraunces', serif; font-size: clamp(22px, 3vw, 30px);
+  font-weight: 600; color: #fff; margin-bottom: 16px; line-height: 1.3;
+}
+.final p { font-size: 17px; color: rgba(255,255,255,.7); margin-bottom: 32px; }
+
+/* ═══ FOOTER ═══ */
+footer {
+  display: flex; justify-content: center; gap: 24px; align-items: center;
+  padding: 24px; font-size: 13px; color: var(--text5); background: var(--bg);
+}
+footer a { color: #777; }
+
+/* ═══ POPUP ═══ */
+.overlay {
+  position: fixed; inset: 0; background: rgba(0,0,0,.65);
+  display: none; align-items: center; justify-content: center;
+  z-index: 1000; backdrop-filter: blur(4px);
+}
+.overlay.active { display: flex; }
+.popup {
+  background: #fff; border-radius: 16px; padding: 40px 32px;
+  max-width: 460px; width: 90%; position: relative;
+  box-shadow: 0 24px 64px rgba(0,0,0,.2);
+}
+.popup-close {
+  position: absolute; top: 16px; right: 16px; background: none;
+  border: none; font-size: 20px; color: #999; cursor: pointer;
+  width: 32px; height: 32px; display: flex; align-items: center; justify-content: center;
+}
+.popup h3 { font-family: 'Fraunces', serif; font-size: 24px; font-weight: 600; margin-bottom: 12px; }
+.popup p { font-size: 15px; color: var(--text2); line-height: 1.6; margin-bottom: 24px; }
+.popup-form { display: flex; gap: 8px; }
+.popup-form input {
+  flex: 1; padding: 14px 16px; border: 1.5px solid var(--border3);
+  border-radius: 8px; font-size: 15px; font-family: 'DM Sans', sans-serif;
+  outline: none; background: var(--bg);
+}
+.popup-form button {
+  background: var(--green); color: #fff; border: none;
+  padding: 14px 20px; border-radius: 8px; font-size: 15px; font-weight: 600;
+  cursor: pointer; white-space: nowrap; font-family: 'DM Sans', sans-serif;
+}
+.popup-micro { font-size: 13px; color: var(--text5); margin-top: 16px; text-align: center; }
+.popup-micro button {
+  background: none; border: none; color: var(--green); cursor: pointer;
+  text-decoration: underline; font-size: 13px; font-family: 'DM Sans', sans-serif; padding: 0;
+}
+
+/* ═══ THANK YOU ═══ */
+.thanks { display: none; }
+.thanks.active { display: block; }
+.thanks-hero { padding: 80px 24px; text-align: center; }
+.thanks-inner { max-width: 640px; margin: 0 auto; }
+.thanks-check {
+  width: 72px; height: 72px; border-radius: 50%; background: var(--green-bg);
+  color: var(--green); font-size: 36px; font-weight: 700;
+  display: inline-flex; align-items: center; justify-content: center; margin-bottom: 24px;
+}
+.thanks h1 {
+  font-family: 'Fraunces', serif; font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700; margin-bottom: 16px;
+}
+.thanks-sub { font-size: 17px; color: var(--text2); line-height: 1.6; margin-bottom: 40px; }
+.thanks-box {
+  background: var(--white); border: 1px solid var(--border);
+  border-radius: 16px; padding: 32px 28px; text-align: left; margin-bottom: 40px;
+}
+.thanks-box h3 { font-family: 'Fraunces', serif; font-size: 20px; font-weight: 600; margin-bottom: 24px; }
+.thanks-step { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 20px; }
+.thanks-step:last-child { margin-bottom: 0; }
+.thanks-num {
+  width: 32px; height: 32px; border-radius: 50%; background: var(--dark2);
+  color: #fff; font-size: 14px; font-weight: 600; display: flex;
+  align-items: center; justify-content: center; flex-shrink: 0;
+}
+.thanks-step p { font-size: 14px; color: var(--text3); line-height: 1.5; margin-top: 4px; }
+.thanks-share { text-align: center; }
+.thanks-share p { font-size: 15px; color: var(--text3); margin-bottom: 12px; }
+.share-btn {
+  background: var(--dark2); color: #fff; border: none;
+  padding: 12px 28px; border-radius: 8px; font-size: 15px; font-weight: 600;
+  cursor: pointer; font-family: 'DM Sans', sans-serif;
+}
+
+/* Arrow SVG inline */
+.arrow-icon { margin-left: 8px; vertical-align: middle; }
+
+@media (max-width: 600px) {
+  .anti-card, .proof-card, .for-card { max-width: 100%; }
+  .form-box { padding: 28px 20px; }
+  .popup { padding: 28px 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════ MAIN PAGE ═══════════ -->
+<div id="mainPage">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="hero-eyebrow">Darmowy audyt marketingu</p>
+      <h1>Pokażę Ci gdzie tracisz klientów.<br><span>I co z tym zrobić.</span></h1>
+      <p class="hero-p">Nie dostajesz raportu na 50 stron, który zbiera kurz. Dostajesz konkretną listę zmian — co, gdzie, dlaczego i w jakiej kolejności. Nagranie video + raport. Bez spotkań, bez presji, bez zobowiązań.</p>
+      <a href="#formularz" class="btn">Zamów darmowy audyt <svg class="arrow-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <p class="hero-micro">Dla firm B2B i SaaS w Polsce. Zero kosztów.</p>
+    </div>
+  </section>
+
+  <!-- ANTI-AGENCY -->
+  <section class="section anti">
+    <div class="container">
+      <h2 class="sh2">To NIE jest kolejny audyt od agencji.</h2>
+      <div class="anti-grid">
+        <div class="anti-card">
+          <h3>Typowa agencja:</h3>
+          <div class="anti-list">
+            <div class="anti-item"><span class="anti-x">✗</span><span>Generyczny raport z narzędzia</span></div>
+            <div class="anti-item"><span class="anti-x">✗</span><span>Rekomendacje typu „poprawcie meta tagi"</span></div>
+            <div class="anti-item"><span class="anti-x">✗</span><span>Przekazywanie między działami</span></div>
+            <div class="anti-item"><span class="anti-x">✗</span><span>Brak kontekstu Twojego rynku</span></div>
+            <div class="anti-item"><span class="anti-x">✗</span><span>50 stron, zero priorytetów</span></div>
+          </div>
+        </div>
+        <div class="anti-card dark">
+          <h3>Mój audyt:</h3>
+          <div class="anti-list">
+            <div class="anti-item"><span class="anti-x">✓</span><span>Deep research Twojej branży i konkurencji</span></div>
+            <div class="anti-item"><span class="anti-x">✓</span><span>Autorskie copy-rekomendacje (psychologia perswazji)</span></div>
+            <div class="anti-item"><span class="anti-x">✓</span><span>Jedna osoba: ja. Od analizy do wniosków.</span></div>
+            <div class="anti-item"><span class="anti-x">✓</span><span>50+ pomysłów na eksperymenty dla Twojej firmy</span></div>
+            <div class="anti-item"><span class="anti-x">✓</span><span>Priorytetyzacja: co najpierw, co da najszybszy efekt</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT YOU GET -->
+  <section class="section what">
+    <div class="container">
+      <h2 class="sh2">Co konkretnie dostajesz?</h2>
+      <p class="ssub">Gotową mapę: gdzie wyciekają Ci klienci i jak to naprawić.</p>
+      <div class="what-grid">
+        <div class="what-card"><span class="what-icon">🔬</span><h3>Deep Research</h3><p>Nurkuję w Twój rynek, konkurencję i grupę docelową. Nie surface-level — sprawdzam co robią inni, gdzie są luki i co działa w Twojej branży.</p></div>
+        <div class="what-card"><span class="what-icon">🧠</span><h3>Audyt strony + lejka</h3><p>Przechodzę Twoją stronę jak potencjalny klient. Formularze, CTA, szybkość, UX, ścieżka zakupowa — punkt po punkcie.</p></div>
+        <div class="what-card"><span class="what-icon">⚡</span><h3>Audyt automatyzacji</h3><p>Co da się zautomatyzować: follow-up leadów, scoring, sekwencje email, nurturing. Mapa workflow'ów gotowych do wdrożenia.</p></div>
+        <div class="what-card"><span class="what-icon">✍️</span><h3>Copy-rekomendacje</h3><p>Propozycje nagłówków, CTA, opisów — napisane na bazie psychologii perswazji i błędów poznawczych. Nie teoria, gotowy tekst.</p></div>
+        <div class="what-card"><span class="what-icon">📊</span><h3>Priorytetyzacja zmian</h3><p>Każda rekomendacja z oceną: wpływ (niski/średni/wysoki), trudność, czas wdrożenia. Wiesz od czego zacząć.</p></div>
+        <div class="what-card"><span class="what-icon">🎬</span><h3>Video walkthrough</h3><p>20-30 min nagranie: pokazuję co, gdzie i dlaczego zmienić. Oglądasz kiedy chcesz. Bez umawiania się na call.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY ME -->
+  <section class="section why">
+    <div class="container">
+      <h2 class="sh2">Jak pracuję (i dlaczego to ma znaczenie)</h2>
+      <div class="why-grid">
+        <div class="why-card"><span class="why-num">50+</span><span class="why-label">eksperymentów / miesiąc</span><p class="why-desc">Warianty tekstu i grafiki. Testuję systematycznie — nie zgaduję co zadziała.</p></div>
+        <div class="why-card"><span class="why-num">2h</span><span class="why-label">edukacji dziennie</span><p class="why-desc">Codziennie. Marketing, sprzedaż, AI, psychologia perswazji. Nie stoję w miejscu.</p></div>
+        <div class="why-card"><span class="why-num">100%</span><span class="why-label">autorskie copy</span><p class="why-desc">Na bazie researchu i psychologii — błędy poznawcze, framing, loss aversion. Nie szablony z internetu.</p></div>
+        <div class="why-card"><span class="why-num">×10</span><span class="why-label">automatyzacja wydajności</span><p class="why-desc">Zbędne, nudne, powtarzalne zadania automaty AI robią za Ciebie. Ty skupiasz się na decyzjach.</p></div>
+      </div>
+      <div class="method-box">
+        <h3>Metodologia: Lean / Agile</h3>
+        <p>Nie buduję wielkich planów na 12 miesięcy. Robię krótkie sprinty: test → dane → wniosek → kolejny test. Szybkie iteracje, szybkie wyniki. Jeśli coś nie działa — zmieniamy w tydzień, nie w kwartał.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="section how">
+    <div class="container">
+      <h2 class="sh2">Jak to wygląda w praktyce?</h2>
+      <p class="ssub">Bez niespodzianek. Bez dziwnych procesów. Prosto.</p>
+      <div class="how-steps">
+        <div class="how-step"><div class="how-num">1</div><div><div class="how-meta">Dzień 0</div><h3>Wypełniasz formularz</h3><p>Imię, email, URL strony, opcjonalnie główny cel. 2 minuty.</p></div></div>
+        <div class="how-step"><div class="how-num">2</div><div><div class="how-meta">Dzień 1-3</div><h3>Robię deep research</h3><p>Twoja branża, konkurencja, strona, lejek, automatyzacje. Nurkuję głęboko.</p></div></div>
+        <div class="how-step"><div class="how-num">3</div><div><div class="how-meta">Dzień 4-5</div><h3>Przygotowuję raport + nagranie</h3><p>Lista zmian z priorytetami + 20-30 min video walkthrough. Konkretne rekomendacje, nie ogólniki.</p></div></div>
+        <div class="how-step"><div class="how-num">4</div><div><div class="how-meta">Dzień 5</div><h3>Dostajesz wszystko na maila</h3><p>Raport + nagranie. Oglądasz kiedy chcesz. Masz pytania? Odpisz mailem — odpowiadam w 24h.</p></div></div>
+      </div>
+      <div class="async-box">
+        <strong>Jak się komunikujemy?</strong> Asynchronicznie. Email, ewentualnie Slack. Żadnych obowiązkowych spotkań. Jeśli będziesz chciał krótki call — organizujemy, ale to nie wymóg. Szanuję Twój czas i swój.
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="section proof">
+    <div class="container">
+      <h2 class="sh2">Co mówią inni?</h2>
+      <div class="proof-grid">
+        <div class="proof-card">
+          <p class="proof-q">„Audyt wskazał 3 zmiany, które mogliśmy wdrożyć tego samego dnia. Konwersja formularza skoczyła w górę w miesiąc."</p>
+          <div class="proof-author"><div class="proof-av">MK</div><div><span class="proof-name">Marek K.</span><br><span class="proof-role">CEO, HR-tech SaaS</span></div></div>
+        </div>
+        <div class="proof-card">
+          <p class="proof-q">„Pierwszy audyt, który nie skończył się na 'poprawcie meta tagi'. Konkretne rekomendacje z priorytetami — wiedzieliśmy od czego zacząć."</p>
+          <div class="proof-author"><div class="proof-av">AP</div><div><span class="proof-name">Anna P.</span><br><span class="proof-role">Head of Marketing, B2B e-commerce</span></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOR WHO -->
+  <section class="section for-who">
+    <div class="container">
+      <h2 class="sh2">Dla kogo jest ten audyt?</h2>
+      <div class="for-grid">
+        <div class="for-card yes">
+          <h3>✓ Dla Ciebie, jeśli:</h3>
+          <div class="for-item"><svg class="for-check" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#0A7B4F" opacity=".12"/><path d="M6 10.5L9 13.5L14.5 7.5" stroke="#0A7B4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Prowadzisz firmę B2B lub SaaS w Polsce</span></div>
+          <div class="for-item"><svg class="for-check" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#0A7B4F" opacity=".12"/><path d="M6 10.5L9 13.5L14.5 7.5" stroke="#0A7B4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Masz stronę, ale konwersja nie zadowala</span></div>
+          <div class="for-item"><svg class="for-check" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#0A7B4F" opacity=".12"/><path d="M6 10.5L9 13.5L14.5 7.5" stroke="#0A7B4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Generujesz ruch — ale za mało zapytań</span></div>
+          <div class="for-item"><svg class="for-check" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#0A7B4F" opacity=".12"/><path d="M6 10.5L9 13.5L14.5 7.5" stroke="#0A7B4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Chcesz wiedzieć CO KONKRETNIE zmienić</span></div>
+          <div class="for-item"><svg class="for-check" width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="10" fill="#0A7B4F" opacity=".12"/><path d="M6 10.5L9 13.5L14.5 7.5" stroke="#0A7B4F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Cenisz konkrety zamiast korporacyjnego bla bla</span></div>
+        </div>
+        <div class="for-card no">
+          <h3>✗ NIE dla Ciebie, jeśli:</h3>
+          <div class="for-item"><span class="for-x">✗</span><span>Nie masz jeszcze strony internetowej</span></div>
+          <div class="for-item"><span class="for-x">✗</span><span>Szukasz kogoś kto „przeklepie polecenie" bez myślenia</span></div>
+          <div class="for-item"><span class="for-x">✗</span><span>Chcesz agencję do budowy strony od zera</span></div>
+          <div class="for-item"><span class="for-x">✗</span><span>Oczekujesz raportu SEO — to audyt CRO i marketingu</span></div>
+          <div class="for-item"><span class="for-x">✗</span><span>Chcesz kogoś kto grzecznie klaska na każdy pomysł</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section class="form-section" id="formularz">
+    <div class="form-box">
+      <h2>Zamów darmowy audyt</h2>
+      <p class="form-sub">Wypełnij formularz — odezwę się w 48h z potwierdzeniem.</p>
+      <form id="auditForm" class="form-inner" novalidate>
+        <div class="form-group">
+          <label for="fname">Imię</label>
+          <input type="text" id="fname" placeholder="np. Marek" autocomplete="given-name" required>
+        </div>
+        <div class="form-group">
+          <label for="femail">E-mail firmowy</label>
+          <input type="email" id="femail" placeholder="marek@firma.pl" autocomplete="email" required>
+        </div>
+        <div class="form-group">
+          <label for="furl">Adres strony do audytu</label>
+          <input type="text" id="furl" placeholder="https://twojafirma.pl" required>
+        </div>
+        <div class="form-group">
+          <label for="fgoal">Główny cel biznesowy <span style="font-weight:400;color:#999">(opcjonalne)</span></label>
+          <input type="text" id="fgoal" placeholder="np. więcej leadów z formularza, lepsza konwersja...">
+        </div>
+        <div class="check-row">
+          <input type="checkbox" id="fconsent" required>
+          <label for="fconsent">Zgadzam się na przetwarzanie danych w celu realizacji audytu. <a href="#">Polityka prywatności</a></label>
+        </div>
+        <div id="formErrors"></div>
+        <button type="submit" class="submit-btn">Tak, chcę darmowy audyt <svg class="arrow-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <p class="form-micro"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" style="opacity:.5"><rect x="3" y="6" width="8" height="6" rx="1.5" stroke="currentColor" stroke-width="1.2"/><path d="M5 6V4.5C5 3.12 5.9 2 7 2s2 1.12 2 2.5V6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg> Bez spamu. Bez zobowiązań. Bez ukrytych haczyków.</p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final">
+    <div class="container">
+      <h2>Każdy dzień bez optymalizacji<br>to leady, które tracisz na zawsze.</h2>
+      <p>Audyt jest darmowy. Jedyne co ryzykujesz to 2 minuty na formularz.</p>
+      <a href="#formularz" class="btn">Zamów darmowy audyt <svg class="arrow-icon" width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M3.75 9H14.25M14.25 9L9.75 4.5M14.25 9L9.75 13.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Jakub Dzwoniarski</span>
+    <a href="#">Polityka prywatności</a>
+  </footer>
+</div>
+
+<!-- ═══════════ THANK YOU PAGE ═══════════ -->
+<div id="thanksPage" class="thanks">
+  <section class="thanks-hero">
+    <div class="thanks-inner">
+      <div class="thanks-check">✓</div>
+      <h1 id="thanksName">Gotowe!</h1>
+      <p class="thanks-sub">Twoje zgłoszenie dotarło. Odezwę się w ciągu 48h z potwierdzeniem i harmonogramem.</p>
+      <div class="thanks-box">
+        <h3>Co teraz?</h3>
+        <div class="thanks-step"><span class="thanks-num">1</span><div><strong>Sprawdź e-mail</strong><p>Wyślę potwierdzenie z pytaniami o cele — żeby audyt był jak najbardziej trafiony.</p></div></div>
+        <div class="thanks-step"><span class="thanks-num">2</span><div><strong>Poczekaj 5 dni roboczych</strong><p>Przejdę Twoją stronę krok po kroku, przeanalizuję dane, przygotuję rekomendacje.</p></div></div>
+        <div class="thanks-step"><span class="thanks-num">3</span><div><strong>Dostajesz video + raport</strong><p>Nagranie ekranu z komentarzem + lista zmian z priorytetami. Oglądasz kiedy chcesz.</p></div></div>
+      </div>
+      <div class="thanks-share">
+        <p>Znasz kogoś, komu taki audyt by pomógł?</p>
+        <button class="share-btn" onclick="if(navigator.share)navigator.share({title:'Darmowy audyt marketingu',text:'Darmowy audyt CRO dla firm B2B — sprawdź',url:window.location.href}).catch(()=>{})">Udostępnij znajomym</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <span>© 2026 Jakub Dzwoniarski</span>
+    <a href="#">Polityka prywatności</a>
+  </footer>
+</div>
+
+<!-- ═══════════ EXIT POPUP ═══════════ -->
+<div class="overlay" id="exitPopup">
+  <div class="popup">
+    <button class="popup-close" onclick="closePopup()">✕</button>
+    <h3>Zanim wyjdziesz —</h3>
+    <p>Wyślę Ci <strong>5 najczęstszych błędów CRO</strong>, które widzę u firm B2B. Mini-checklista na maila. Zero spamu.</p>
+    <div class="popup-form">
+      <input type="email" id="popupEmail" placeholder="Twój e-mail">
+      <button onclick="submitPopup()">Wyślij</button>
+    </div>
+    <p class="popup-micro">Albo <button onclick="closePopup();document.getElementById('formularz').scrollIntoView({behavior:'smooth'})">zamów pełny darmowy audyt →</button></p>
+  </div>
+</div>
+
+<script>
+// ═══ EXIT INTENT ═══
+let exitTriggered = false;
+document.addEventListener('mouseleave', function(e) {
+  if (e.clientY < 10 && !exitTriggered && !document.getElementById('thanksPage').classList.contains('active')) {
+    exitTriggered = true;
+    setTimeout(() => document.getElementById('exitPopup').classList.add('active'), 300);
+  }
+});
+document.getElementById('exitPopup').addEventListener('click', function(e) {
+  if (e.target === this) closePopup();
+});
+function closePopup() { document.getElementById('exitPopup').classList.remove('active'); }
+function submitPopup() {
+  const email = document.getElementById('popupEmail').value;
+  if (email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+    document.getElementById('femail').value = email;
+    closePopup();
+    document.getElementById('formularz').scrollIntoView({ behavior: 'smooth' });
+  }
+}
+document.getElementById('popupEmail').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') submitPopup();
+});
+
+// ═══ FORM VALIDATION ═══
+document.getElementById('auditForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('fname').value.trim();
+  const email = document.getElementById('femail').value.trim();
+  const url = document.getElementById('furl').value.trim();
+  const consent = document.getElementById('fconsent').checked;
+  const errs = [];
+
+  document.querySelectorAll('.form-group input').forEach(i => i.classList.remove('error'));
+  document.getElementById('formErrors').innerHTML = '';
+
+  if (!name) { errs.push('Podaj imię'); document.getElementById('fname').classList.add('error'); }
+  if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { errs.push('Podaj poprawny e-mail'); document.getElementById('femail').classList.add('error'); }
+  if (!url) { errs.push('Podaj adres strony'); document.getElementById('furl').classList.add('error'); }
+  if (!consent) { errs.push('Wymagana zgoda na przetwarzanie danych'); }
+
+  if (errs.length) {
+    document.getElementById('formErrors').innerHTML = errs.map(e => '<span class="error-text">' + e + '</span>').join('<br>');
+    return;
+  }
+
+  // SUCCESS
+  document.getElementById('mainPage').style.display = 'none';
+  document.getElementById('thanksPage').classList.add('active');
+  document.getElementById('thanksName').textContent = 'Gotowe, ' + name + '!';
+  window.scrollTo(0, 0);
+});
+</script>
+
+</body>
+</html>
