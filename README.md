@@ -1,33 +1,36 @@
 # Jakub Dzwoniarski
 
-Projekty webowe, narzędzia do pracy z wideo i nauka programowania. W tych repozytoriach można zobaczyć zarówno niewielkie strony w HTML/CSS/JavaScript, jak i aplikacje z osobnym frontendem, API i workerami.
+Buduję narzędzia do automatyzacji procesów, integracji API i pracy z danymi. W projektach łączę problem biznesowy z implementacją, walidacją wejścia, testami i dokumentacją techniczną.
 
-## Od czego zacząć
+Pracuję z JavaScriptem/TypeScriptem, Node.js i Pythonem. Poniżej są wybrane projekty, które można uruchomić lokalnie i sprawdzić na syntetycznych danych.
 
-| Projekt | Co warto obejrzeć | Technologie |
+## Projekty na początek
+
+| Projekt | Problem i implementacja | Co sprawdzić w kodzie |
 | --- | --- | --- |
-| [Astoka](https://github.com/dzwoniar/astoka) | Ingest wideo, transkrypcja i propozycje highlightów; MVP przed eksportem gotowych shortów | Next.js, TypeScript, FastAPI, Celery, PostgreSQL, Docker |
-| [Mój Mały Wszechświat](https://github.com/dzwoniar/my-max-universe) | Gra z generowaniem planet, zbieraniem zasobów i lokalnym zapisem postępu | JavaScript, Canvas 2D, Web Audio |
-| [Asteroids](https://github.com/dzwoniar/Asteroids-MANUAL-Game) | Ręcznie napisany projekt edukacyjny: pętla gry, sprite'y, kolizje i strzelanie | Python, Pygame |
-| [Idea Wnętrz × Overflow](https://github.com/dzwoniar/demo-landing---overflow-x-ideawnetrz) | Landing page z kalkulatorem i ścieżką formularz → podziękowanie | React, TypeScript, Vite, Tailwind CSS |
-| [Marsun — lead magnet v2](https://github.com/dzwoniar/marsun.pl-demo-lead-v2) | Formularz i ścieżka pozyskania kontaktu dla materiałów OZE | HTML, CSS, JavaScript |
-| [WebFlyx](https://github.com/dzwoniar/webflyx) | Niewielkie repozytorium danych o filmach w Markdown i CSV | Markdown, CSV |
+| [Faktury i cashflow](https://github.com/dzwoniar/faktury-cashflow) | CSV z fakturami i płatnościami → stan rozrachunków, scenariusze przepływów i samodzielny dashboard HTML | Kwoty w groszach, daty, częściowe płatności, deterministyczność; 61 testów |
+| [Raport Kliencki PL](https://github.com/dzwoniar/raport-kliencki-pl) | Dane Meta Ads i feedback klienta → KPI oraz memo decyzyjne HTML | Walidacja lejka, rozdzielenie danych platformy i deklaracji, jawne N/A; 14 testów |
+| [Lead Magnet Express](https://github.com/dzwoniar/lead-magnet-express) | Brief JSON + SVG → landing; opcjonalny Worker integrujący formularz z MailerLite | Konfiguracja poza kodem, walidacja, zgoda, honeypot, obsługa błędów i testy z atrapami |
+| [AI Tech Tutor](https://github.com/dzwoniar/ai-tech-tutor) | Transkrypt lokalnej sesji pomocy → instrukcja Markdown/HTML z krokami i obrazami | Cykl życia sesji, parser JSONL, generator, indeks i sześć testów offline |
 
-## Pozostałe prototypy stron
+Te cztery repozytoria mają instrukcje uruchomienia, przykłady oraz CI. Przykłady są syntetyczne; status prototypu i ograniczenia są opisane w każdym README. Klucze usług oraz rzeczywiste dane operacyjne pozostają poza repozytoriami.
 
-- **Usługi i B2B:** [WiseGroup](https://github.com/dzwoniar/wisegroup-demo), [ElektroManiacy](https://github.com/dzwoniar/demo-elektromaniacy.pl), [EKV Malinski](https://github.com/dzwoniar/EKVmalinski.de), [Puremax](https://github.com/dzwoniar/puremax), [JustinClean](https://github.com/dzwoniar/justinclean).
-- **Marki lokalne i oferta produktowa:** [Papa Barber](https://github.com/dzwoniar/papa-barber), [Pełna Buła](https://github.com/dzwoniar/pelnabula), [Kinga Nails](https://github.com/dzwoniar/KINGANAILS), [KROY](https://github.com/dzwoniar/KROY), [LEVY Custom](https://github.com/dzwoniar/LEVY-CUSTOM).
-- **Warianty koncepcji:** [LawTech v1](https://github.com/dzwoniar/v1-lawtech), [LawTech v2](https://github.com/dzwoniar/v2-lawtech), [Marsun — strona v1](https://github.com/dzwoniar/marsun.pl-demo), [strona v2](https://github.com/dzwoniar/marsun.pl-demo-v2), [lead magnet v1](https://github.com/dzwoniar/marsun.pl-lead).
+## Inne obszary
 
-Repozytoria opisane jako demo prezentują interfejs i interakcje. Zakres integracji formularzy, rezerwacji i płatności jest opisany w README danego projektu. Treści ofertowe w prototypach nie są pomiarami skuteczności wdrożenia.
+- [Astoka](https://github.com/dzwoniar/astoka) — prototyp pipeline’u wideo: Next.js, FastAPI, Celery, PostgreSQL, MinIO, transkrypcja i propozycje highlightów. Eksport gotowych shortów pozostaje etapem rozwoju.
+- [Mój Mały Wszechświat](https://github.com/dzwoniar/my-max-universe) — gra w Canvas 2D: generowanie planet, zasoby, walka, Web Audio i lokalny zapis postępu.
+- [Asteroids](https://github.com/dzwoniar/Asteroids-MANUAL-Game) — projekt edukacyjny w Pythonie i Pygame: sprite’y, pętla gry, kolizje i strzelanie.
+- [Idea Wnętrz × Overflow](https://github.com/dzwoniar/demo-landing---overflow-x-ideawnetrz) — prototyp React/TypeScript z kalkulatorem i ścieżką formularza.
+
+Pozostałe landing pages dokumentują eksperymenty z interfejsem i ścieżkami konwersji. Ich README wskazują, które formularze i integracje są symulowane.
+
+## Jak przeglądać
+
+Zacznij od README wybranego projektu, uruchom testy i syntetyczny przykład, a następnie przejdź do modułów wskazanych w mapie kodu. Najwięcej moich decyzji technicznych widać w walidacji danych, obsłudze braków informacji i granicach integracji.
 
 ## O tym repozytorium
 
-To repozytorium pełni również rolę README profilu. Zawiera wcześniejszy prototyp strony **Darmowy Audyt Marketingu** w pliku [`index.html`](index.html).
-
-### Lokalny podgląd strony
-
-Wystarczy przeglądarka i Python 3 jako prosty serwer plików:
+Repozytorium pełni rolę README profilu i zachowuje wcześniejszy prototyp strony „Darmowy Audyt Marketingu” w [index.html](index.html). HTML, CSS i JavaScript są w jednym pliku, a fonty pochodzą z Google Fonts.
 
 ```sh
 git clone https://github.com/dzwoniar/dzwoniar.git
@@ -35,8 +38,4 @@ cd dzwoniar
 python -m http.server 8000 --bind 127.0.0.1
 ```
 
-Otwórz [http://127.0.0.1:8000](http://127.0.0.1:8000). Jeśli Twój system używa nazwy `python3`, zamień nią `python`. Zatrzymanie serwera: `Ctrl+C`.
-
-HTML, CSS i JavaScript znajdują się w `index.html`. Strona pobiera fonty DM Sans i Fraunces z Google Fonts. Skrypt obsługuje popup przy opuszczaniu strony, przepisanie e-maila do formularza, walidację i widok podziękowania.
-
-Formularz zatrzymuje domyślną wysyłkę i zmienia jedynie widok DOM. Repozytorium nie zawiera odbiornika zgłoszeń, bazy danych ani analityki potwierdzającej przyjęcie zgłoszenia. Do sprawdzania interfejsu używaj danych testowych.
+Podgląd: [http://127.0.0.1:8000](http://127.0.0.1:8000). Formularz tej historycznej strony tylko waliduje dane i zmienia widok; nie ma odbiornika zgłoszeń. Do sprawdzania używaj danych testowych.
