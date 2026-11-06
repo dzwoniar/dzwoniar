@@ -12,8 +12,8 @@ Buduję narzędzia do automatyzacji procesów, integracji API i pracy z danymi. 
 | --- | --- | --- |
 | [Astoka](https://github.com/dzwoniar/astoka) | Materiał wideo → projekt, transkrypcja i propozycje highlightów (MVP) | Next.js 16, FastAPI, Celery i PostgreSQL; kontrakty API, zadania asynchroniczne i testy Python |
 | [Portal Projektowy Demo](https://github.com/dzwoniar/portal-projektowy-demo) | Wspólny plan pracy klienta i zespołu: zadania, komentarze, KPI i outbox | Adapter danych w pamięci, ograniczenia widoków, bezpieczne renderowanie DOM; 6 testów |
-| [Faktury Cashflow](https://github.com/dzwoniar/faktury-cashflow) | Faktury i płatności CSV → rozrachunki, prognoza przepływów i dashboard HTML | Kwoty w groszach, daty, częściowe płatności, deterministyczność; 61 testów |
-| [Raport Kliencki PL](https://github.com/dzwoniar/raport-kliencki-pl) | Meta Ads CSV i feedback klienta → KPI oraz raport decyzyjny HTML | Walidacja lejka, źródła danych i jawne N/A; 14 testów |
+| [Faktury Cashflow](https://github.com/dzwoniar/faktury-cashflow)<br>[Otwórz dashboard](https://dzwoniar.github.io/faktury-cashflow/) | Faktury i płatności CSV → rozrachunki, prognoza przepływów i dashboard HTML | Kwoty w groszach, daty, częściowe płatności, deterministyczność; 61 testów |
+| [Raport Kliencki PL](https://github.com/dzwoniar/raport-kliencki-pl)<br>[Otwórz raport](https://dzwoniar.github.io/raport-kliencki-pl/) | Meta Ads CSV i feedback klienta → KPI oraz raport decyzyjny HTML | Walidacja lejka, źródła danych i jawne N/A; 14 testów |
 
 Każde z tych repozytoriów ma instrukcję uruchomienia, mapę kodu i CI. Dane demonstracyjne są syntetyczne, a zakres MVP i wymagania środowiska opisuje README każdego projektu.
 
